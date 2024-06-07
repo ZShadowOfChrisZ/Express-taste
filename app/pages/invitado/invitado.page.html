@@ -1,0 +1,21 @@
+<ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondoNav">
+  <ion-button (click)="navegarPrincipal()">principal</ion-button>
+  <div>
+    <h3 class="textoInvitado">Para comenzar escanee el QR que se encuentra en el borde de su mesa</h3>
+  </div>
+  <div class="centrado">
+    <img class="imagenQR" src="assets/SVG/QR Code-bro.svg" alt="">
+  </div>
+  <div>
+    <h3 class="textoInvitado">¡Scanea apretando este boton!</h3>
+  </div>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" class="scan-button-wrapper">
+    <ion-fab-button (click)="scan()" [disabled]="!isSupported" class="scan-button">
+      <ion-icon name="scan"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

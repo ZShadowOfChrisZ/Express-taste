@@ -1,0 +1,169 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fondo {
+    --background: white;
+}
+
+.fondoNav {
+    --background: #25406B;
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoRegistro {
+    margin-top: 20px;
+    width: 70px;
+}
+
+.padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+
+.separador {
+    height: 10px;
+}
+
+.portada {
+    width: 190px;
+}
+
+.centrado {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.centrado-img {
+    margin: 0 auto;
+}
+
+
+.blanco {
+    color: #ffffff;
+}
+
+.margenRegistro {
+    margin-top: 34px;
+}
+
+.fondoBoton {
+    --background: #25406B;
+    width: 200px;
+}
+
+.botonRegistro {
+    --background: #25406B;
+    width: 330px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.inputRegistro {
+    color: #000000;
+    margin: 0;
+}
+
+.textoInvitado {
+    text-align: center;
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.circuloPass {
+    position: fixed;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #25406B;
+    clip-path: circle(520px at bottom center);
+    z-index: -1;
+}
+
+ion-footer {
+    transition: opacity 0.1 ease-in-out;
+    opacity: 1;
+}
+
+ion-footer ion-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ion-footer ion-img {
+    max-width: 250px;
+    height: auto;
+}
+
+.redondo {
+    border-radius: 5px;
+    border: solid 2px #25406B;
+    --background: #ffffff;
+    color: #000000;
+}
+
+.tecladoVisible ion-footer{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.imagenQR {
+    width: 60%;
+}
+
+.scan-button-wrapper {
+    z-index: 1000;
+  }
+  
+  .scan-button {
+    position: relative;
+    z-index: 1001;
+  }

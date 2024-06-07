@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="fondo" style="width: 40px;">
+    <ion-back-button style="color: black;" slot="start" defaultHref="inicio"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="container">
+    <div class="centrado">
+      <img class="logoRegistro" src="assets/SVG/gorro_bco.svg" alt="">
+      <div class="separador"></div>
+    </div>
+    <div class="padding">
+      <strong><p class="inputRegistro">Email</p></strong>
+      <div class="redondo">
+        <ion-input [(ngModel)]="email"></ion-input>
+      </div>
+    </div>
+    <div class="padding">
+      <strong><p class="inputRegistro">Contraseña</p></strong>
+      <div class="redondo">
+        <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
+      </div>
+    </div>
+    <div class="centrado botones">
+      <ion-button class="botonRegistro blanco" (click)="inicioSesion()">Iniciar Sesión</ion-button>
+      <br>
+      <p style="color: #000000;" >¿No tienes una cuenta? Créala aquí!</p>
+      <ion-button class="botonRegistro blanco" (click)="navegarRegistro()">Registrarse</ion-button>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer class="centrado">
+  <div class="circuloPass"></div>
+  <ion-toolbar class="fondoNav centrado">
+    <ion-img class="footer centrado-img" src="assets/SVG/xt-logoaz.svg" alt=""></ion-img>
+  </ion-toolbar>
+</ion-footer>
+
